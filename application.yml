@@ -1,0 +1,15 @@
+server:
+  port: 8443
+  tomcat:
+    max-threads: 800
+    accept-count: 30000
+    min-spare-threads: 20
+    max-connections: 30000
+  servlet-path: /photography
+  ssl:
+    #    证书路径
+    key-store: HelloWorld.key
+    key-store-type: JKS
+    key-alias: HelloWorld
+    #    配置密码，就是在生成证书的时候输入的密码
+    key-store-password: helloworld
